@@ -1,6 +1,8 @@
 {
   "name": "ikki-pro-vant-vue2",
   "version": "0.1.0",
+  "description": "IKKI Pro base on Vue 2, Vue CLI, Vue Router, Vuex, Axios, Vant, etc.",
+  "author": "IKKI <ikki2002@qq.com>",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
