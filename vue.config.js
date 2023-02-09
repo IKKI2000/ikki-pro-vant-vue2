@@ -12,6 +12,17 @@ module.exports = defineConfig({
             enableInSFC: false,
         },
     },
+    css: {
+        loaderOptions: {
+            less: {
+                lessOptions: {
+                    modifyVars: {
+                        hack: `true; @import '@/assets/style/theme/ikki.less';`,
+                    },
+                },
+            },
+        },
+    },
     productionSourceMap: false,
     configureWebpack: {
         performance: {
