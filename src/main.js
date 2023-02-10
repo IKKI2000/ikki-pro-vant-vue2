@@ -2,6 +2,7 @@ import Vue from 'vue';
 import ikki from '@/ikki.vue';
 import i18n from '@/plugins/i18n';
 import '@/plugins/vant';
+import '@/plugins/fontawesome';
 import router from '@/router';
 import store from '@/store';
 import '@/plugins/axios';
