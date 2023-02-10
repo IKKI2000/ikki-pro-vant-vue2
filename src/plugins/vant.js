@@ -46,6 +46,7 @@ import {
     Lazyload,
     List,
     Loading,
+    Locale,
     NavBar,
     NoticeBar,
     Notify,
@@ -178,3 +179,5 @@ Vue.use(Tag);
 Vue.use(Toast);
 Vue.use(TreeSelect);
 Vue.use(Uploader);
+
+Vue.prototype.$locale = Locale;
