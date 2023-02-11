@@ -1,5 +1,8 @@
 <template>
     <div id="app">
+        <van-overlay :show="$store.state.loading">
+            <van-loading vertical>{{ $t('Common.Loading') }}</van-loading>
+        </van-overlay>
         <nav>
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link>
