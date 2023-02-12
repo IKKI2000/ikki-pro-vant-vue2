@@ -30,7 +30,25 @@
             align-items: center;
         }
     }
-
+    #nprogress {
+        .bar {
+            height: 3px !important;
+            background: @green !important;
+            .peg {
+                box-shadow: 0 0 10px @green, 0 0 5px @green;
+            }
+        }
+        .spinner {
+            top: 8px !important;
+            right: 8px !important;
+            .spinner-icon {
+                border-top-color: @green;
+                border-left-color: @green;
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
     nav {
         padding: 30px;
 
