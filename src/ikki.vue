@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <van-overlay :show="$store.state.loading">
-            <van-loading vertical>{{ $t('Common.Loading') }}</van-loading>
+            <van-loading vertical type="spinner" :color="$utils.less.primaryColor" size="60" :text-color="$utils.less.primaryColor" text-size="24">{{ $t('Common.Loading') }}</van-loading>
         </van-overlay>
         <nav>
             <router-link to="/">Home</router-link> |
@@ -24,6 +24,11 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         color: #2c3e50;
+        > .van-overlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     nav {
